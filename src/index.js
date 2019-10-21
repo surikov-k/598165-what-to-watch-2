@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './components/app/app.jsx';
+import {getFilms} from './data';
+
+const films = getFilms();
 
 ReactDOM.render(
-    <App />,
+    <App
+      films={films}
+    />,
     document.querySelector(`#root`)
 );
