@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import MainPage from '../main-page/main-page.jsx';
 
 const App = (props) => {
-  const {films} = props;
+  const {
+    films,
+    onMovieTitleClick,
+  } = props;
+
   return (
     <MainPage
       films={films}
+      onMovieTitleClick={onMovieTitleClick}
     />
   );
 };
@@ -16,6 +21,7 @@ App.propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
   })).isRequired,
+  onMovieTitleClick: PropTypes.func.isRequired,
 };
 
 export default App;

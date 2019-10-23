@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MainPage = (props) => {
-  const {films} = props;
+  const {
+    films,
+    onMovieTitleClick,
+  } = props;
   return (
     <div>
       <section className="movie-card">
@@ -103,7 +106,7 @@ const MainPage = (props) => {
                 <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[0].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[0].title}</a>
               </h3>
             </article>
 
@@ -112,7 +115,7 @@ const MainPage = (props) => {
                 <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[1].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[1].title}</a>
               </h3>
             </article>
 
@@ -121,7 +124,7 @@ const MainPage = (props) => {
                 <img src="img/macbeth.jpg" alt="Macbeth" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[2].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[2].title}</a>
               </h3>
             </article>
 
@@ -130,7 +133,7 @@ const MainPage = (props) => {
                 <img src="img/aviator.jpg" alt="Aviator" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[3].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[3].title}</a>
               </h3>
             </article>
 
@@ -140,7 +143,7 @@ const MainPage = (props) => {
                 <img src="img/we-need-to-talk-about-kevin.jpg" alt="We need to talk about Kevin" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[4].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[4].title}</a>
               </h3>
             </article>
 
@@ -149,7 +152,7 @@ const MainPage = (props) => {
                 <img src="img/what-we-do-in-the-shadows.jpg" alt="What We Do in the Shadows" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[5].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[5].title}</a>
               </h3>
             </article>
 
@@ -158,7 +161,7 @@ const MainPage = (props) => {
                 <img src="img/revenant.jpg" alt="Revenant" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[6].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[6].title}</a>
               </h3>
             </article>
 
@@ -167,7 +170,7 @@ const MainPage = (props) => {
                 <img src="img/johnny-english.jpg" alt="Johnny English" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[7].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[7].title}</a>
               </h3>
             </article>
 
@@ -177,7 +180,7 @@ const MainPage = (props) => {
                 <img src="img/shutter-island.jpg" alt="Shutter Island" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[8].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[8].title}</a>
               </h3>
             </article>
 
@@ -186,7 +189,7 @@ const MainPage = (props) => {
                 <img src="img/pulp-fiction.jpg" alt="Pulp Fiction" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[9].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[9].title}</a>
               </h3>
             </article>
 
@@ -195,7 +198,7 @@ const MainPage = (props) => {
                 <img src="img/no-country-for-old-men.jpg" alt="No Country for Old Men" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[10].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[10].title}</a>
               </h3>
             </article>
 
@@ -204,7 +207,7 @@ const MainPage = (props) => {
                 <img src="img/snatch.jpg" alt="Snatch" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[11].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[11].title}</a>
               </h3>
             </article>
 
@@ -215,7 +218,7 @@ const MainPage = (props) => {
 
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[12].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[12].title}</a>
               </h3>
             </article>
 
@@ -224,7 +227,7 @@ const MainPage = (props) => {
                 <img src="img/seven-years-in-tibet.jpg" alt="Seven Years in Tibet" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[13].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[13].title}</a>
               </h3>
             </article>
 
@@ -233,7 +236,7 @@ const MainPage = (props) => {
                 <img src="img/midnight-special.jpg" alt="Midnight Special" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[14].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[14].title}</a>
               </h3>
             </article>
 
@@ -242,7 +245,7 @@ const MainPage = (props) => {
                 <img src="img/war-of-the-worlds.jpg" alt="War of the Worlds" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[15].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[15].title}</a>
               </h3>
             </article>
 
@@ -252,7 +255,7 @@ const MainPage = (props) => {
                 <img src="img/dardjeeling-limited.jpg" alt="Dardjeeling Limited" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[16].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[16].title}</a>
               </h3>
             </article>
 
@@ -261,7 +264,7 @@ const MainPage = (props) => {
                 <img src="img/orlando.jpg" alt="Orlando" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[17].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[17].title}</a>
               </h3>
             </article>
 
@@ -270,7 +273,7 @@ const MainPage = (props) => {
                 <img src="img/mindhunter.jpg" alt="Mindhunter" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[18].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[18].title}</a>
               </h3>
             </article>
 
@@ -279,7 +282,7 @@ const MainPage = (props) => {
                 <img src="img/midnight-special.jpg" alt="Midnight Special" width="280" height="175" />
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">{films[19].title}</a>
+                <a className="small-movie-card__link" href="movie-page.html" onClick={onMovieTitleClick}>{films[19].title}</a>
               </h3>
             </article>
           </div>
@@ -312,6 +315,7 @@ MainPage.propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
   })).isRequired,
+  onMovieTitleClick: PropTypes.func.isRequired,
 };
 
 export default MainPage;

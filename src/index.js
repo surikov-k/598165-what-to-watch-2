@@ -9,6 +9,7 @@ const films = getFilms();
 ReactDOM.render(
     <App
       films={films}
+      onMovieTitleClick={() => {}}
     />,
     document.querySelector(`#root`)
 );
